@@ -33,7 +33,7 @@ RUN python build.py
 
 RUN /work/build/ubuntu-latest/kubescape download artifacts -o /work/artifacts
 
-FROM alpine:3.16.2
+FROM alpine:3.16
 
 RUN addgroup -S armo && adduser -S armo -G armo
 
